@@ -1,0 +1,132 @@
+/* Basic CSS styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px; /* Add some padding */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding : 20px 0 5px 0;
+    color: rgb(64, 181, 134);
+}
+
+#chart, #chart-group, #chart-month, #chart-weekday, #chart-day-month, #chart-hourly, #chart-probability, #chart-line, #chart-purchase-distribution, #chart-spending-distribution {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bar {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.label {
+    fill: white;
+    font-size: 12px;
+    text-anchor: end;
+}
+
+.bar:hover {
+    fill: orangered;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style the axes */
+.tick text {
+    font-size: 11px;
+}
+
+.tick line {
+    stroke: #ddd;
+}
+
+.domain {
+    stroke: #888;
+}
+
+.grid path {
+    display: none;
+}
+
+/* Multi-chart dashboard styles */
+#multi-chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 25px;
+    padding: 40px 60px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.multi-chart {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 280px;
+    width: 100%;
+    justify-self: center;
+}
+
+.multi-chart h3 {
+    text-align: left;
+    margin: 0 0 12px 0;
+    color: rgb(64, 181, 134);
+    font-size: 16px;
+    font-weight: bold;
+    grid-row: 1;
+    padding-left: 0;
+}
+
+.multi-chart svg {
+    width: 100%;
+    height: 250px;
+    grid-row: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#line-chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 25px;
+    padding: 40px 60px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
